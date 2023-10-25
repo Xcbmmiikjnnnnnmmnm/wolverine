@@ -1,0 +1,679 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+w1 Y= 2.6
+w2 Y= 1.6
+b Y= -3.4
+
+w1 O= 0.6
+w2 O= 0.6
+b O= -0.4
+
+w1 No= -1.4
+w2 No= -1.4
+b No= 0.6
+
+i = 1
+
+while i < 113:  # Este While es para correr el programa 8 veces
+    A = float(input("Ingrese A "))  # Estas son las entradas
+    B = float(input("Ingrese B "))  # Estas son las entradas
+    C = float(input("Ingrese C "))  # Estas son las entradas
+    D = float(input("Ingrese D "))  # Estas son las entradas
+   
+            ###este es el plano A###
+        
+         ###esta es la neurona 1 ###
+        
+        y1=(A*w1 No+A*w2 No+b No)
+        if y1< 0 :
+                T1=0 
+        else :
+                T1=1
+                
+        ###esta es la neurona 2 ###
+        
+        y2=(T1*w1 Y+C*w2 Y+b Y)
+        if y2< 0 :
+                T2=0 
+        else :
+                T2=1
+                
+         ###esta es la neurona 3 ###
+        
+        y3=(T2*w1 Y+D*w2 Y+b Y)
+        if y3< 0 :
+                T3=0 
+        else :
+                T3=1
+                
+                        
+         ###esta es la neurona 4 ###
+        
+        y4=(A*w1 No+A*w2 No+b No)
+        if y4< 0 :
+                T4=0 
+        else :
+                T4=1
+                
+        ###esta es la neurona 5 ###
+        
+        y5=(T4*w1 Y+B*w2 Y+b Y)
+        if y5< 0 :
+                T5=0 
+        else :
+                T5=1
+                
+         ###esta es la neurona 6 ###
+        
+        y6=(D*w1 No+D*w2 No+b No)
+        if y6< 0 :
+                T6=0 
+        else :
+                T6=1
+                
+         ###esta es la neurona 7 ###
+        
+        y7=(T5*w1 Y+T6*w2 Y+b Y)
+        if y7< 0 :
+                T7=0 
+        else :
+                T7=1
+                
+         ###esta es la neurona 8 ###
+        
+        y8=(C*w1 No+C*w2 No+b No)
+        if y8< 0 :
+                T8=0 
+        else :
+                T8=1
+                
+         ###esta es la neurona 9 ###
+        
+        y9=(A*w1 Y+T8*w2 Y+b Y)
+        if y9< 0 :
+                T9=0 
+        else :
+                T9=1 
+                
+         ###esta es la neurona 10 ###
+        
+        y10=(T9*w1 Y+D*w2 Y+b Y)
+        if y10< 0 :
+                T10=0 
+        else :
+                T10=1
+                
+                 
+          ###esta es la neurona 11 ###
+        
+        y11=(B*w1 No+B*w2 No+b No)
+        if y11< 0 :
+                T11=0 
+        else :
+                T11=1
+                
+          ###esta es la neurona 12 ###
+        
+        y12=(A*w1 Y+T8*w2 Y+b Y)
+        if y12< 0 :
+                T12=0 
+        else :
+                T12=1 
+                
+         ###esta es la neurona 13 ###
+        
+        y13=(D*w1 No+D*w2 No+b No)
+        if y13< 0 :
+                T13=0 
+        else :
+                T13=1
+                
+          ###esta es la neurona 14 ###
+        
+        y14=(T12*w1 Y+T13*w2 Y+b Y)
+        if y14< 0 :
+                T14=0 
+        else :
+                T14=1 
+                
+          ###esta es la neurona 15 ###
+        
+        y15=(A*w1 Y+C*w2 Y+b Y)
+        if y15< 0 :
+                T15=0 
+        else :
+                T15=1 
+                
+                
+        ###esta es la neurona 16 ###
+        
+        y16=(D*w1 No+D*w2 No+b No)
+        if y16< 0 :
+                T16=0 
+        else :
+                T16=1 
+                
+        ###esta es la neurona 17 ###
+        
+        y17=(T15*w1 Y+T16*w2 Y+b Y)
+        if y17< 0 :
+                T17=0 
+        else :
+                T17=1 
+                
+        ###esta es la neurona 18 ###
+        
+        y18=(T3*w1 O+T7*w2 O+b O)
+        if y18< 0 :
+                T18=0 
+        else :
+                T18=1 
+              
+       ###esta es la neurona 19 ###
+        
+        y19=(T10*w1 O+T14*w2 O+b O)
+        if y19< 0 :
+                T19=0 
+        else :
+                T19=1 
+                
+       ###esta es la neurona 20 ###
+        
+        y20=(T18*w1 O+T19*w2 O+b O)
+        if y20< 0 :
+                T20=0 
+        else :
+                T20=1
+                
+        ###esta es la neurona 21 ###
+        
+        y21=(T20*w1 O+T17*w2 O+b O)
+        if y21< 0 :
+                T21=0 
+        else :
+                T21=1  
+                
+          ###este es el plano B###
+          
+          
+        ###esta es la neurona 22 ###
+        
+        y22=(B*w1 No+B*w2 No+b No)
+        if y22< 0 :
+                T22=0 
+        else :
+                T22=1
+                
+        ###esta es la neurona 23 ###
+        
+        y23=(C*w1 No+C*w2 No+b No)
+        if y23< 0 :
+                T23=0 
+        else :
+                T23=1
+                
+       ###esta es la neurona 24 ###
+        
+        y24=(D*w1 No+D*w2 No+b No)
+        if y24< 0 :
+                T24=0 
+        else :
+                T24=1
+                
+        ###esta es la neurona 25 ###
+        
+        y25=(T22*w1 Y+T23*w2 Y+b Y)
+        if y25< 0 :
+                T25=0 
+        else :
+                T25=1
+                
+        ###esta es la neurona 26 ###
+        
+        y26=(T25*w1 Y+T24*w2 Y+b Y)
+        if y26< 0 :
+                T26=0 
+        else :
+                T26=1
+                
+        ###esta es la neurona 27 ###
+        
+        y27=(C*w1 No+C*w2 No+b No)
+        if y27< 0 :
+                T27=0 
+        else :
+                T27=1
+                
+        ###esta es la neurona 28 ###
+        
+        y28=(B*w1 Y+T27*w2 Y+b Y)
+        if y28< 0 :
+                T28=0 
+        else :
+                T28=1
+                
+        ###esta es la neurona 29 ###
+        
+        y29=(T28*w1 Y+D*w2 Y+b Y)
+        if y29< 0 :
+                T29=0 
+        else :
+                T29=1
+
+         ###esta es la neurona 30 ###
+        
+        y30=(A*w1 Y+C*w2 Y+b Y)
+        if y30< 0 :
+                T30=0 
+        else :
+                T30=1
+                
+                
+          ###esta es la neurona 31 ###
+        
+        y31=(D*w1 No+D*w2 No+b No)
+        if y31< 0 :
+                T31=0 
+        else :
+                T31=1  
+                
+          ###esta es la neurona 32 ###
+        
+        y32=(T30*w1 Y+T31*w2 Y+b Y)
+        if y32< 0 :
+                T32=0 
+        else :
+                T32=1
+                
+        ###esta es la neurona 33 ###
+        
+        y33=(T26*w1 O+T29*w2 O+b O)
+        if y33< 0 :
+                T33=0 
+        else :
+                T33=1 
+                
+        ###esta es la neurona 34 ###
+        
+        y34=(T33*w1 O+T32*w2 O+b O)
+        if y34< 0 :
+                T34=0 
+        else :
+                T34=1          
+                
+                
+                               
+            ###este es el plano C###
+            
+           ###esta es la neurona 35 ###
+        
+        y35=(B*w1 No+B*w2 No+b No)
+        if y35< 0 :
+                T35=0 
+        else :
+                T35=1  
+                
+           ###esta es la neurona 36 ###
+        
+        y36=(C*w1 No+C*w2 No+b No)
+        if y36< 0 :
+                T36=0 
+        else :
+                T36=1        
+                
+           ###esta es la neurona 37 ###
+        
+        y37=(T35*w1 Y+T36*w2 Y+b Y)
+        if y37< 0 :
+                T37=0 
+        else :
+                T37=1       
+                
+           ###esta es la neurona 38 ###
+        
+        y38=(C*w1 No+C*w2 No+b No)
+        if y38< 0 :
+                T38=0 
+        else :
+                T38=1        
+                
+            ###esta es la neurona 39 ###
+        
+        y39=(T38*w1 Y+D*w2 Y+b Y)
+        if y39< 0 :
+                T39=0 
+        else :
+                T39=1        
+                
+            ###esta es la neurona 40 ###
+        
+        y40=(A*w1 Y+C*w2 Y+b Y)
+        if y40< 0 :
+                T40=0 
+        else :
+                T40=1            
+                
+            ###esta es la neurona 41 ###
+        
+        y41=(D*w1 No+D*w2 No+b No)
+        if y41< 0 :
+                T41=0 
+        else :
+                T41=1         
+                
+            ###esta es la neurona 42 ###
+        
+        y42=(T40*w1 Y+T41*w2 Y+b Y)
+        if y42< 0 :
+                T42=0 
+        else :
+                T42=1             
+                
+        ###esta es la neurona 43 ###
+        
+        y43=(T37*w1 O+T39*w2 O+b O)
+        if y43< 0 :
+                T43=0 
+        else :
+                T43=1           
+                
+        ###esta es la neurona 44 ###
+        
+        y44=(T43*w1 O+T42*w2 O+b O)
+        if y44< 0 :
+                T44=0 
+        else :
+                T44=1                   
+                
+             ###este es el plano D###
+                           
+             ###esta es la neurona 45 ###
+        
+        y45=(B*w1 No+B*w2 No+b No)
+        if y45< 0 :
+                T45=0 
+        else :
+                T45=1      
+                
+              ###esta es la neurona 46 ###
+        
+        y46=(A*w1 No+A*w2 No+b No)
+        if y46< 0 :
+                T46=0 
+        else :
+                T46=1                     
+                
+             ###esta es la neurona 47 ###
+        
+        y47=(T46*w1 Y+C*w2 Y+b Y)
+        if y47< 0 :
+                T47=0 
+        else :
+                T47=1                   
+                
+            ###esta es la neurona 48 ###
+        
+        y48=(C*w1 No+C*w2 No+b No)
+        if y48< 0 :
+                T48=0 
+        else :
+                T48=1               
+                
+            ###esta es la neurona 49 ###
+        
+        y49=(A*w1 Y+T48*w2 Y+b Y)
+        if y49< 0 :
+                T49=0 
+        else :
+                T49=1             
+                             
+            ###esta es la neurona 50 ###
+        
+        y50=(A*w1 Y+D*w2 Y+b Y)
+        if y50< 0 :
+                T50=0 
+        else :
+                T50=1            
+                
+         ###esta es la neurona 51 ###
+        
+        y51=(T45*w1 O+T47*w2 O+b O)
+        if y51< 0 :
+                T51=0 
+        else :
+                T51=1          
+                               
+         ###esta es la neurona 52 ###
+        
+        y52=(T49*w1 O+T50*w2 O+b O)
+        if y52< 0 :
+                T52=0 
+        else :
+                T52=1  
+                
+         ###esta es la neurona 53 ###
+        
+        y53=(T51*w1 O+T52*w2 O+b O)
+        if y53< 0 :
+                T53=0 
+        else :
+                T53=1          
+                                  
+             ###este es el plano E###                                  
+                                              
+                                              
+             ###esta es la neurona 54 ###
+        
+        y54=(B*w1 No+B*w2 No+b No)
+        if y54< 0 :
+                T54=0 
+        else :
+                T54=1      
+                
+             ###esta es la neurona 55 ###
+        
+        y55=(D*w1 No+D*w2 No+b No)
+        if y55< 0 :
+                T55=0 
+        else :
+                T55=1         
+                              
+            ###esta es la neurona 56 ###
+        
+        y56=(C*w1 O+A*w2 O+b O)
+        if y56< 0 :
+                T56=0 
+        else :
+                T56=1            
+                                    
+          ###esta es la neurona 57 ###
+        
+        y57=(T54*w1 O+T55*w2 O+b O)
+        if y57< 0 :
+                T57=0 
+        else :
+                T57=1  
+                
+         ###esta es la neurona 58 ###
+        
+        y58=(T57*w1 O+T56*w2 O+b O)
+        if y58< 0 :
+                T58=0 
+        else :
+                T58=1  
+                                      
+              ###este es el plano F###        
+              
+              
+              ###esta es la neurona 59 ###
+        
+        y59=(D*w1 No+D*w2 No+b No)
+        if y59< 0 :
+                T59=0 
+        else :
+                T59=1    
+                
+         ###esta es la neurona 60 ###
+        
+        y60=(T59*w1 O+C*w2 O+b O)
+        if y60< 0 :
+                T60=0 
+        else :
+                T60=1  
+                              
+          ###esta es la neurona 61 ###
+        
+        y61=(T60*w1 O+A*w2 O+b O)
+        if y61< 0 :
+                T61=0 
+        else :
+                T61=1  
+                                                                     
+              ###este es el plano G###      
+              
+            ###esta es la neurona 62 ###
+        
+        y62=(A*w1 No+A*w2 No+b No)
+        if y62< 0 :
+                T62=0 
+        else :
+                T62=1  
+                
+            ###esta es la neurona 63 ###
+        
+        y63=(B*w1 No+B*w2 No+b No)
+        if y63< 0 :
+                T63=0 
+        else :
+                T63=1  
+                
+                
+            ###esta es la neurona 64 ###
+        
+        y64=(T62*w1 Y+T63*w2 Y+b Y)
+        if y64< 0 :
+                T64=0 
+        else :
+                T64=1                                               
+              
+            ###esta es la neurona 65 ###
+        
+        y65=(T64*w1 Y+C*w2 Y+b Y)
+        if y65< 0 :
+                T65=0 
+        else :
+                T65=1                                               
+                            
+             ###esta es la neurona 66 ###
+        
+        y66=(T65*w1 Y+D*w2 Y+b Y)
+        if y66< 0 :
+                T66=0 
+        else :
+                T66=1                                               
+                             
+             ###esta es la neurona 67 ###
+        
+        y67=(B*w1 Y+C*w2 Y+b Y)
+        if y67< 0 :
+                T67=0 
+        else :
+                T67=1        
+                
+               ###esta es la neurona 68 ###
+        
+        y68=(D*w1 No+D*w2 No+b No)
+        if y68< 0 :
+                T68=0 
+        else :
+                T68=1    
+                
+                
+            ###esta es la neurona 69 ###
+        
+        y69=(T67*w1 Y+T68*w2 Y+b Y)
+        if y69< 0 :
+                T69=0 
+        else :
+                T69=1                                               
+                                       
+             ###esta es la neurona 70 ###
+        
+        y70=(B*w1 No+B*w2 No+b No)
+        if y70< 0 :
+                T70=0 
+        else :
+                T70=1  
+                                   
+               ###esta es la neurona 71 ###
+        
+        y71=(A*w1 Y+T70*w2 Y+b Y)
+        if y71< 0 :
+                T71=0 
+        else :
+                T71=1        
+                
+                
+             ###esta es la neurona 72 ###
+        
+        y72=(C*w1 No+C*w2 No+b No)
+        if y72< 0 :
+                T72=0 
+        else :
+                T72=1        
+                
+                
+            ###esta es la neurona 73 ###
+        
+        y73=(T71*w1 Y+T72*w2 Y+b Y)
+        if y73< 0 :
+                T73=0 
+        else :
+                T73=1            
+                
+                     
+             ###esta es la neurona 74 ###
+        
+        y74=(T73*w1 Y+D*w2 Y+b Y)
+        if y74< 0 :
+                T74=0 
+        else :
+                T74=1           
+                
+              ###esta es la neurona 75 ###
+        
+        y75=(T66*w1 O+T69*w2 O+b O)
+        if y75< 0 :
+                T75=0 
+        else :
+                T75=1  
+                                  
+                ###esta es la neurona 76 ###
+        
+        y76=(T75*w1 O+T74*w2 O+b O)
+        if y76< 0 :
+                T76=0 
+        else :
+                T76=1  
+                                             
+# Salida
+    print("La salida de la red neuronal es ""_____"+ str(T21)+"_____")
+    i = i + 1  # Incremento del ciclo while
+    
+    # Salida
+    print("La salida de la red neuronal es "+ str(T61) + "_________" + str(T33))
+    i = i + 1  # Incremento del ciclo while
+    
+    # Salida
+    print("La salida de la red neuronal es ""_____" + str(T76)+"_____" )
+    i = i + 1  # Incremento del ciclo while
+
+    # Salida
+    print("La salida de la red neuronal es "+ str(T58) + "_________"+ str(T44))    
+    i = i + 1  # Incremento del ciclo while
+    
+    # Salida
+    print("La salida de la red neuronal es ""_____"+ str(T53)+"_____"  )
+    i = i + 1  # Incremento del ciclo while
+#FF00D7
